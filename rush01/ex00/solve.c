@@ -6,7 +6,7 @@
 /*   By: phuocngu <phuocngu@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/06 11:32:40 by phuocngu          #+#    #+#             */
-/*   Updated: 2024/07/07 23:30:51 by phuocngu         ###   ########.fr       */
+/*   Updated: 2024/07/09 18:10:39 by phuocngu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ int check_views(int grid[4][4], int *viewpoints);
 
 int    is_safe(int grid[4][4], int row, int col, int num)
 {
-    int i,
+    int i;
 
     i = 0;
     while (i < 4)

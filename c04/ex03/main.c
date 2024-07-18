@@ -1,15 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: phuocngu <phuocngu@student.hive.fi>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/08 21:15:37 by phuocngu          #+#    #+#             */
+/*   Updated: 2024/07/09 12:11:29 by phuocngu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 
-int ft_atoi(char *str);
+int	ft_atoi(char *str);
 
-int main(int argc, char *argv[])
+int	main(void)
 {
-    if(argc != 2 )
-    {
-        printf("give 1 parameter");
-        return (1);
-    }
-
-    printf("M:%s == %d\n", argv[1], ft_atoi(argv[1]));
-    return (0);
+	printf("ghg == %d\n", ft_atoi("         ++-++--23423sdfjhskjdffggf456"));
+	return (0);
 }

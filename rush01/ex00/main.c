@@ -6,7 +6,7 @@
 /*   By: phuocngu <phuocngu@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 21:14:06 by phuocngu          #+#    #+#             */
-/*   Updated: 2024/07/07 23:17:41 by phuocngu         ###   ########.fr       */
+/*   Updated: 2024/07/09 18:13:43 by phuocngu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ void	initialize_grid(int grid[4][4])
 			grid[i][j] = 0;
 			j++;
 		}
+		i++;
 	}
 }
 
@@ -55,7 +56,7 @@ int	main(int argc, char *argv[])
 	}
 	else
 	{
-		printf("can't solve");
+		write(1,"can't solve",12);
 	}
 	return (0);
 }

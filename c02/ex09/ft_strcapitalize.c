@@ -6,7 +6,7 @@
 /*   By: phuocngu <phuocngu@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/30 20:16:53 by phuocngu          #+#    #+#             */
-/*   Updated: 2024/07/02 21:00:03 by phuocngu         ###   ########.fr       */
+/*   Updated: 2024/07/08 21:32:53 by phuocngu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,17 +28,11 @@ int	is_num(char c)
 
 int	is_uppercase(char c)
 {
-	if(c >= 'A' && c <='Z')
+	if (c >= 'A' && c <= 'Z')
 		return (1);
 	return (0);
 }
 
-int	is_lowercase(char c)
-{
-	if(c >= 'a' && c <= 'z')
-		return (1);
-	return (0);
-}
 char	*ft_strcapitalize(char *str)
 {
 	int	x;

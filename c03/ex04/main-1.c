@@ -12,6 +12,7 @@ int main() {
         "Mississippi",
         "Empty string",
         "",  // Empty haystack
+        NULL,
         "Very long string with aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
         "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",  // Needle longer than haystack
         "aaab needle in aaab haystack",
@@ -29,6 +30,7 @@ int main() {
         "sippi",
         "string",
         "",   // Empty needle
+        NULL,
         "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
         "This is a test string",  // Needle longer than haystack
         "needle",

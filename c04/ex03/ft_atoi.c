@@ -6,7 +6,7 @@
 /*   By: phuocngu <phuocngu@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/04 19:19:53 by phuocngu          #+#    #+#             */
-/*   Updated: 2024/07/07 15:30:19 by phuocngu         ###   ########.fr       */
+/*   Updated: 2024/07/09 12:21:42 by phuocngu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,18 +54,20 @@ int	str_to_int(char *str)
 {
 	int	result;
 	int	nblen;
+	int	i;
 
 	nblen = 0;
 	result = 0;
-	while (str[nblen] >= '0' && str[nblen] <= '9')
+	i = 0;
+	while (str[nblen] && (str[nblen] >= '0' && str[nblen] <= '9'))
 	{
 		nblen++;
 	}
-	str[nblen] = '\0';
-	while (*str)
+	while (*str && i < nblen)
 	{
 		result = result * 10 + (*str - '0');
 		str++;
+		i++;
 	}
 	return (result);
 }

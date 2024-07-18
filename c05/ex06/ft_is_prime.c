@@ -6,7 +6,7 @@
 /*   By: phuocngu <phuocngu@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 14:26:03 by phuocngu          #+#    #+#             */
-/*   Updated: 2024/07/08 17:32:51 by phuocngu         ###   ########.fr       */
+/*   Updated: 2024/07/09 13:31:09 by phuocngu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,13 @@ int	ft_is_prime(int nb)
 {
 	int	i;
 
-	i = 2;
-	if (nb == 1 || nb == 0)
+	
+	if (nb <= 1)
 	{
 		return (0);
 	}
-	if (nb == 2147483647)
-	{
-		return (1);
-	}
-	while (i < nb)
+	i = 2;
+	while (i < nb/2)
 	{
 		if ((nb % i) == 0)
 		{

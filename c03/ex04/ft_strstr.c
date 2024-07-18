@@ -6,7 +6,7 @@
 /*   By: phuocngu <phuocngu@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/02 21:02:02 by phuocngu          #+#    #+#             */
-/*   Updated: 2024/07/03 20:33:07 by phuocngu         ###   ########.fr       */
+/*   Updated: 2024/07/17 20:01:42 by phuocngu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,14 @@ int	is_same(char c1, char c2)
 
 char	*ft_strstr(char *str, char *to_find)
 {
-	// NEED to fix NULL error
 	int	i;
 	int	y;
 
 	i = 0;
 	y = 0;
+
+	if(!str || !to_find)
+		return 0;
 	while (str[i])
 	{
 		if (is_same(str[i], to_find[y]))
@@ -30,9 +32,7 @@ char	*ft_strstr(char *str, char *to_find)
 			while (str[i + y] == to_find[y] && str[i + y])
 			{
 				if (to_find[y + 1] == '\0')
-				{
 					return (str + i);
-				}
 				y++;
 			}
 			y = 0;
